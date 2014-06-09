@@ -1,0 +1,126 @@
+/* Adams portfolio, gjord av Adam Sjödahl, alla rättigheter reserverade.  
+Enklast kontaktbar via Facebook: https://www.facebook.com/adam.sjodahl vid eventuella frågor*/
+
+/* CSS reset för att få ut maximalt med utrymme från sidan */
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#ram{
+	max-width: 1366px;
+	margin: 0 auto;
+}
+header{
+}
+#titelbild{		
+	max-width: 200px;
+	padding-left: 28%;
+}
+#titel{
+	display: inline-block;
+}
+	#titel>h1{
+		font-family: 'century gothic';
+		display: inline-block;
+		color: #ff5050;	
+		padding-left: 3%;
+		margin-bottom: -2%;
+		font-size: 3em;
+		padding-top: 100px;
+	}
+	#slogan{
+		display: inline-block;	
+		font-family: 'century gothic';
+		color: #ff5050;
+		font-size: 1.5em;
+		padding-left: 3%;
+	}
+
+/* Här börjar vår navigation, fortfarande i header delen av html */
+nav{
+	padding-left: 22%;
+	background: #ff9999;
+}
+	nav>ul{
+	/*tar bort prickarna, bullets */
+		list-style-type: none;
+	}
+		nav>ul>li{
+			display: inline;
+			padding-left: 5%;
+		}
+			nav>ul>li>a{
+				text-decoration: none;
+				color: #353535;
+				font-family: 'Century Gothic';
+				font-size: 2em;
+				opacity: 0.9;
+			}
+				nav>ul>li>a:hover{
+					color: #000000;
+					transition: color 1s;
+					text-decoration: underline;
+				}
+/* Här markerar vi ett slut för headern även i css */
+/* Här börjar vår section där det viktigaste innhållet förvaras. Detta för att göra struktern enklare. */
+section{
+	padding-top: 4%;
+	padding-left: 6%;
+	padding-bottom: 4%;
+}
+	section>img{
+		max-width: 300px;
+		border: 5px solid #ff5050;
+		display: inline-block;
+	}
+	section>div{
+		display: inline-block;
+		width: 900px;
+		padding-left: 2%;
+	}
+		section>div>h2, #andraSection>h3, #tredjeSection>h4{
+			font-family: 'Century Gothic';
+			font-size: 2.5em;
+			font-weight: normal;
+			margin-bottom: -1px;
+			padding-left: 2%;
+			color: #353535;
+		}
+		section>div>p, #andraSection>p, #tredjeSection>p{
+			font-family: 'Century Gothic';
+			text-align: center;
+			color: #353535;
+		}
+/* Här börjar vår andra section som ligger under en div istället då man inte har två st sections på en hemsida!*/
+
+#andraSection{
+	background-color: #f0f0f0;
+	border: 3px solid #bfbfbf;
+}
+	#andraSection>h3,p{
+		text-align: center;
+	}
+
+/* Här börjar vår tredje section som ligger under en div istället då man inte har två st sections på en hemsida!*/
+#tredjeSection{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#tredjeSection>h4{
+	font-size: 200%;
+	text-align: center;
+}
+
+
+footer{
+	font-family: 'century gothic';
+	font-size: 15px;
+	text-align: center;
+	opacity: 0.7;
+	height: 30px;
+	padding-top: 1%;
+}
